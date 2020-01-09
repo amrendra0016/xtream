@@ -1,0 +1,23 @@
+## find the angle between the minute hand and hour hand of clock
+h=int(input("Enter the hour"))
+m=int(input("Enter the minute"))
+print(h)
+print(m)
+
+Angle_of_hour = 30*h+(m*0.5)
+Angle_of_minute_hand=6*m
+if (Angle_of_hour>=Angle_of_minute_hand):
+    Angle=(Angle_of_hour-Angle_of_minute_hand)
+
+if (Angle_of_hour<Angle_of_minute_hand):
+    Angle=(Angle_of_minute_hand-Angle_of_hour)
+if (Angle>180):
+    Angle=360-Angle
+a=Angle
+b=int(Angle)
+print(type(b))
+#print("Angle between the two hands is:",b)
+if (a>b):
+    print("Angle between the two hands is:",a)
+else:
+    print("Angle between the two hands is:", b)
