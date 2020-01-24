@@ -1,0 +1,16 @@
+#Program to convert integer into Binary number
+from stack import Stack
+def Binary(no):
+    s=Stack()
+    print(no)
+    while no > 1 :
+        remainder=no % 2
+        print(remainder)
+        s.push(remainder)
+        no=no // 2
+
+    binary=""
+    while not s.is_empty():
+        binary=binary+str(s.pop())
+    print(binary)
+Binary(242)
